@@ -1,0 +1,72 @@
+{"contract":"{
+    calculationPeriodDates: {
+        calculationPeriodDatesAdjustments: {
+            businessCenters: {
+                businessCentersReference: {
+                    externalReference: primaryBusinessCenters
+                }
+            },
+            businessDayConvention: MODFOLLOWING
+        },
+        calculationPeriodFrequency: {
+            rollConvention: _3,
+            period: M,
+            periodMultiplier: 3
+        },
+        effectiveDate: {
+            adjustableDate: {
+                dateAdjustments: {
+                    businessDayConvention: NONE
+                },
+                unadjustedDate: {
+                    day: 3,
+                    month: 1,
+                    year: 2018
+                }
+            }
+        },
+        terminationDate: {
+            adjustableDate: {
+                dateAdjustments: {
+                    businessCenters: {
+                        businessCentersReference: {
+                            externalReference: primaryBusinessCenters
+                        }
+                    },
+                    businessDayConvention: MODFOLLOWING
+                },
+                unadjustedDate: {
+                    day: 3,
+                    month: 1,
+                    year: 2020
+                }
+            }
+        }
+    },
+    dayCountFraction: {
+        value: _30E_360
+    },
+    payerReceiver: {
+        payerPartyReference: {
+            externalReference: mega-bank
+        },
+        receiverPartyReference: {
+            externalReference: giga-bank
+        }
+    },
+    quantity: {
+        notionalSchedule: {
+            notionalStepSchedule: {
+                currency: {
+                    value: EUR
+                },
+                initialValue: 50000000
+            }
+        }
+    },
+    rateSpecification: {
+        fixedRate: {
+            initialValue: 0.06
+        }
+    }
+}"}
