@@ -26,13 +26,13 @@ public class FixedRateCalculationWithFunction {
     public static void main(String[] args) throws Exception {
 
         // Pre-defined inputs to be used in fixed amount calculation
-        //
+        //        
         LocalDate fixedLegPeriodStart = LocalDate.of(2018, 7, 3);
         LocalDate fixedLegPeriodEnd = LocalDate.of(2018, 10, 3);
         FieldWithMetaDayCountFractionEnum fixedLegDCF = FieldWithMetaDayCountFractionEnum.builder().setValue(DayCountFractionEnum._30E_360).build();
         BigDecimal notional = BigDecimal.valueOf(50_000_000);
 
-
+       
         // Instantiate functions to be used in calculations. These function implementations are an example of how
         // trivial data can be passed through to the calculation
         //
